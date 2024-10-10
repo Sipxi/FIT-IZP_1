@@ -1,4 +1,4 @@
-# Just a repository for VUT FIT exercises with answers and comments
+# Just a repository for VUT FIT exercises with answers and explanations
 
 ## Makefile
 
