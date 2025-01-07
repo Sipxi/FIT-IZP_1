@@ -8,7 +8,7 @@
 
 # Compiler and flags
 CC 			= gcc #! CHANGE BASED ON YOUR COMPLIER
-CFLAGS 		= -std=c11 -Wall -Wextra -Werror -pedantic
+CFLAGS 		= -std=c11 -Wall -Wextra -pedantic
 
 # Executable names
 EXEC        = main

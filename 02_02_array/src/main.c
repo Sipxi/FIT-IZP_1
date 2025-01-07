@@ -16,8 +16,8 @@ void read_print_array_reverse() {
   }
   //TODO 2. Print read array in reversed order to stdout.
 
-  for (int idx = ARRAY_LENGTH; idx >= 0; idx--){
-    printf("%d", idx);
+  for (int idx = ARRAY_LENGTH-1; idx >= 0; idx--){
+    printf("%d", number_array[idx]);
   }
   return;
 }
@@ -51,7 +51,6 @@ void read_print_array_avg() {
   for (int idx = 0; idx < ARRAY_LENGTH; idx++){
     scanf("%d", &number_array[idx]);
     }
-  int max = number_array[0];
   //TODO 1. Read an array of numbers of length ARRAY_LENGTH from stdin.
   int summ = 0;
 
@@ -91,7 +90,7 @@ void read_print_array_merge() {
   //TODO 2. To 3rd array of length MERGED_ARRAY_LENGTH copy first and second
 
   for (int idx = 0; idx < MERGED_ARRAY_LENGTH; idx++){
-    if(idx > ARRAY_LENGTH){
+    if(idx >= ARRAY_LENGTH){
       merged_array[idx] = second_array[idx - ARRAY_LENGTH];
     }
     else{
@@ -109,7 +108,7 @@ void read_print_array_merge() {
 
 #ifndef TEST_BUILD
 
-int main(int argc, char *argv[]) {
+int main() {
   /*
   printf("\n--read_print_array_reverse--\n");
   read_print_array_reverse();
@@ -120,9 +119,10 @@ int main(int argc, char *argv[]) {
   printf("\n--read_print_array_avg--\n");
   read_print_array_avg();
   */
-
+  
   printf("\n--read_print_array_merge--\n");
   read_print_array_merge();
+
 
   return 0;
 }

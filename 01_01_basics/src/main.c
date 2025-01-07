@@ -102,8 +102,9 @@ void read_print_maximum() {
 
 
 #ifndef TEST_BUILD
-
 int main() {
+  int a[] = { 123, 456, 789 };
+  printf("%d\n", 0[a]);
   printf("\n--print_helloworld--\n");
   print_helloworld();
 
