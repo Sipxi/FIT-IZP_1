@@ -4,16 +4,12 @@
  *     OBSAH V TOMTO SOUBROU NEUPRAVUJTE!
  */
 
- #include <stdbool.h>
-
  #ifndef TYPES_H
  #define TYPES_H
  
- // DEKLAROVANÉ HLAVIČKY FUNKCÍ NIJAK NEMĚŇTE
+ // DEKLAROVANÉ HLAVIČKY FUNKCÍ A STRUKTUR NIJAK NEMĚŇTE
  
- bool is_alpha(char c);
- 
- bool is_name(char arr[]);
+ void swapInts(int *variableA, int *variableB);
  
  #endif
  

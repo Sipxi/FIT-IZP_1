@@ -1,11 +1,13 @@
 #include "types.h"
 #include <stdio.h>
+#include <stdbool.h>
 
 /**
  * Determine whether the provided date is valid. Respect leap years with extra
  * days, different month lengths and assume that the only valid years are above
  * 1500 and below 3000.
  *
+ * @param date Datová struktura reprezentující datum
  * @param date Datová struktura reprezentující datum
  *
  * @return `true` v případě validního data, `false` jinak
@@ -34,8 +36,8 @@ bool is_valid_date(struct date_t date)
         }
     }
 
-    if (date.month == 4 && date.day > 30 || date.month == 6 && date.day > 30 || date.month == 9 && date.day > 30 ||
-        date.month == 11 && date.day > 30) {
+    if (((date.month == 4) && (date.day > 30)) || ((date.month == 6) && (date.day > 30)) || ((date.month == 9) && (date.day > 30)) ||
+        ((date.month == 11) && (date.day > 30))) {
         return false;
     }
     return true;

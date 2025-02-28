@@ -1,5 +1,6 @@
 #include "types.h"
 #include <stdio.h>
+#include <stdbool.h>
 
 /**
  * Determine whether the provided character is alphabetic.
@@ -17,7 +18,7 @@ bool is_alpha(char c)
     //* It will return true or false and you can use it /save it in a variable
     //* a = is_alpha('a')
     //* (a will be true)
-    if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z') {
+    if (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z'))) {
 
         return true;
     }

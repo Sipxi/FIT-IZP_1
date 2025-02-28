@@ -12,6 +12,7 @@ void print_2d(int matrix[MAT_ROWS][MAT_COLUMNS])
     }
 }
 
+
 bool save_to(FILE *output, int matrix[MAT_ROWS][MAT_COLUMNS])
 {
     //* Iterate over the 2D array and write to the file using fprintf
@@ -76,7 +77,7 @@ bool load_from_file(const char *filename, int matrix[MAT_ROWS][MAT_COLUMNS])
 
 #ifndef TEST_BUILD
 
-int main(int argc, char *argv[])
+int main()
 {
     // Create and initialize a matrix
     int matrix[MAT_ROWS][MAT_COLUMNS];
